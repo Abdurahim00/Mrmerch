@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 263 42% 46%; /* #634c9e - purple */
+    --primary-foreground: 0 0% 100%; /* White text on purple */
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 263 42% 46%; /* Purple text on light bg */
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 263 42% 46%; /* Purple muted text */
+    --accent: 263 42% 46%; /* Purple accent */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 263 42% 90%; /* Light purple border */
+    --input: 263 42% 90%; /* Light purple input */
+    --ring: 263 42% 46%; /* Purple ring */
+    --chart-1: 263 42% 46%; /* Main purple chart color */
+    --chart-2: 263 42% 66%; /* Lighter purple */
+    --chart-3: 263 42% 26%; /* Darker purple */
+    --chart-4: 263 30% 56%; /* Desaturated purple */
+    --chart-5: 263 50% 76%; /* Very light purple */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 263 42% 46%; /* Purple sidebar text */
+    --sidebar-primary: 263 42% 46%; /* Purple sidebar primary */
+    --sidebar-primary-foreground: 0 0% 100%; /* White on purple */
+    --sidebar-accent: 263 42% 95%; /* Very light purple accent */
+    --sidebar-accent-foreground: 263 42% 46%; /* Purple text */
+    --sidebar-border: 263 42% 90%; /* Light purple border */
+    --sidebar-ring: 263 42% 46%; /* Purple ring */
+  }
+  .dark {
+    --background: 263 30% 10%; /* Dark purple background */
+    --foreground: 0 0% 98%;
+    --card: 263 30% 12%; /* Dark purple card */
+    --card-foreground: 0 0% 98%;
+    --popover: 263 30% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 263 42% 46%; /* #634c9e - purple */
+    --primary-foreground: 0 0% 100%; /* White text on purple */
+    --secondary: 263 30% 20%; /* Darker purple secondary */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 263 30% 20%;
+    --muted-foreground: 263 20% 70%; /* Light purple muted text */
+    --accent: 263 42% 46%; /* Purple accent */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 263 30% 25%; /* Dark purple border */
+    --input: 263 30% 25%; /* Dark purple input */
+    --ring: 263 42% 60%; /* Bright purple ring for dark mode */
+    --chart-1: 263 42% 60%; /* Bright purple chart */
+    --chart-2: 263 42% 80%; /* Very light purple */
+    --chart-3: 263 42% 40%; /* Medium purple */
+    --chart-4: 263 30% 70%; /* Muted light purple */
+    --chart-5: 263 50% 90%; /* Almost white purple */
+    --sidebar-background: 263 30% 15%; /* Dark purple sidebar */
+    --sidebar-foreground: 0 0% 95.9%;
+    --sidebar-primary: 263 42% 46%; /* #634c9e - purple */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 263 30% 25%; /* Dark purple sidebar accent */
+    --sidebar-accent-foreground: 0 0% 95.9%;
+    --sidebar-border: 263 30% 25%; /* Dark purple sidebar border */
+    --sidebar-ring: 263 42% 60%; /* Bright purple ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
